@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-NAME=egammaenv
+NAME=semiLepenv
 LCG=/cvmfs/sft.cern.ch/lcg/views/LCG_96python3/x86_64-centos7-gcc8-opt
 
 if [[ -f $NAME/bin/activate ]]; then

@@ -7,16 +7,14 @@ and execute:
 ssh cmslpc-sl7.fnal.gov -L8xxx:localhost:8xxx
 
 # create a working directory and clone the repo
-mkdir -p nobackup/cmsdas2020
-cd nobackup/cmsdas2020
-git clone git@github.com:nsmith-/CMSDAS_EGamma.git
-cd CMSDAS_EGamma
+git clone git@github.com:kdipetri/SemiLep_VVV.git 
+cd SemiLep_VVV 
 
 # this script sets up the python environment, only run once
 ./setup.sh
 
 # this enables the environment, run it each login (csh users: use activate.csh)
-source egammaenv/bin/activate
+source semiLepenv/bin/activate
 
 # this gives you permission to read CMS data via xrootd
 voms-proxy-init --voms cms --valid 100:00
